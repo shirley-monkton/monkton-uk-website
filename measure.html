@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body { margin: 40px; background: #141E2B; color: white; }
+.h1-test { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 3.2rem; line-height: 1.2; display: inline; }
+.sub-test { font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 1.15rem; line-height: 1.7; display: inline; }
+.result { font-family: monospace; font-size: 14px; color: #00B4D8; margin: 10px 0 30px; }
+</style>
+</head>
+<body>
+<div>
+  <span class="h1-test" id="h1line">Secure Information Sharing for UK</span>
+  <div class="result" id="r1"></div>
+</div>
+<div>
+  <span class="sub-test" id="subline1">Monkton ISE is a no-code platform that enables UK Government agencies to</span>
+  <div class="result" id="r2"></div>
+</div>
+<div>
+  <span class="sub-test" id="subline2">build secure, accredited information sharing applications - without writing a</span>
+  <div class="result" id="r3"></div>
+</div>
+<script>
+window.onload = () => {
+  document.getElementById('r1').textContent = 'H1 line width: ' + document.getElementById('h1line').getBoundingClientRect().width + 'px';
+  document.getElementById('r2').textContent = 'Sub line 1 width: ' + document.getElementById('subline1').getBoundingClientRect().width + 'px';
+  document.getElementById('r3').textContent = 'Sub line 2 width: ' + document.getElementById('subline2').getBoundingClientRect().width + 'px';
+};
+</script>
+</body>
+</html>
